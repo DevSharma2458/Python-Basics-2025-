@@ -1,3 +1,9 @@
+'''
+Use + when you want a single continuous string (but you must convert numbers).
+
+Use , when you want Python to handle spaces and number conversion automatically.
+'''
+
 # for i in range(1, 10):
 #     print(i)
 # #-------------------------
@@ -27,4 +33,4 @@
 #     i += 1    
 # #-------------------------
 # for i in range(1,11):
-#     print("56 X" + str(i) + "=" + str(56*i)) #table of 56
+#     print("56 X " + str(i) + "=" + str(56*i)) #table of 56
