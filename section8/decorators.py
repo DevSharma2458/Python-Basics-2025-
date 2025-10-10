@@ -5,22 +5,22 @@ Decorator is a function that takes a function, it creates a new function inside 
 
 
 
-def decorator(func):
-    def wrapper():
-        print("I am about to execute a function...")
-        func()
-        print("I have executed the function...")
-    return wrapper
+# def decorator(func):
+#     def wrapper():
+#         print("I am about to execute a function...")
+#         func()
+#         print("I have executed the function...")
+#     return wrapper
 
-@decorator # by including @decorator we can print the wrapper statements by using say_hello()
-def say_hello():
-    print("Hello!")
-say_hello()
+# @decorator # by including @decorator we can print the wrapper statements by using say_hello()
+# def say_hello():
+#     print("Hello!")
+# say_hello()
 
-# # say_hello()    #normal printing say_hello without including @decorator
-# Method of Printing the f() function which contains wrapper 
-# f = decorator (say_hello) 
-# f()
+# # # say_hello()    #normal printing say_hello without including @decorator
+# # Method of Printing the f() function which contains wrapper 
+# # f = decorator (say_hello) 
+# # f()
 
 ''' 
 # Explaination
@@ -37,7 +37,39 @@ then it see the def wrapper and according to it prints the whole body and in bet
 #----------------------------------------------------
 '''Decorators with Aguements'''
 
+def repeat(n):
+    def decorator(func):
+        def wrapper(a):
+            for i in range(n):
+                func(a)
+        return wrapper
+    return decorator
+
+@repeat(7)
+def say_hello(a):
+    print(f"Hello! {a}" )
+
+say_hello("Dev")    
 
 
+'''
+Explaination
 
+1- Python sees @repeat(7) → calls repeat(7) first.
 
+2- Inside repeat(7) → returns the decorator function (with n = 7).
+
+3- decorator(say_hello) is called → func = say_hello.
+
+4- Inside decorator → defines wrapper(a) and returns it.
+
+5- Now say_hello = wrapper → the original function is wrapped.
+
+6- Calling say_hello("Dev") → actually calls wrapper("Dev").
+
+7- Inside wrapper(a) → Python binds a = "Dev".
+
+8- For loop runs 7 times (n=7) → each time it calls func(a) → original say_hello(a) runs.
+
+9- Inside original say_hello → a = "Dev", so it prints Hello! Dev.
+'''
