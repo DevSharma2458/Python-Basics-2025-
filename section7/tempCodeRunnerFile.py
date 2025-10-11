@@ -1,1 +1,0 @@
-f"X is {self.x} and y is {self.y}"
