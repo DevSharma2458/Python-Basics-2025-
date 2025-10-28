@@ -10,24 +10,27 @@
 # print(e.projects)
 #---------------------------------------------------
 
-class Employee:
-    def __init__(self, name, salary):
-        self.name = name
-        self.salary = salary
-    def first_name(self):
-        l = self.name.split(" ")
-        return l[0]
-    def set_first_name(self, first):
-        l = self.name.split(" ")
-        new_name = f"{first} {l[1]}"
-        self.name = new_name
+# class Employee:
+#     def __init__(self, name, salary):
+#         self.name = name
+#         self.salary = salary
     
-e = Employee("Jack Doe", 34555)
-print(e.first_name())
-e.set_first_name("John")
-print(e.name)
+#     def first_name(self):
+#         l = self.name.split(" ")
+#         return l[0]
+    
+#     def set_first_name(self, first):
+#         l = self.name.split(" ")
+#         new_name = f"{first} {l[1]}"
+#         self.name = new_name
+    
+# e = Employee("Jack Doe", 34555)
+# print(e.first_name())
+# e.set_first_name("John")
+# print(e.name)
 #----------------------------------------------------
 class Employee:
+    
     def __init__(self, name, salary):
         self.name = name
         self.salary = salary
@@ -39,8 +42,8 @@ class Employee:
     
     @first_name.setter
     def first_name(self, first):
-        l = self.name.split(" ")
-        new_name = f"{first} {l[1]}"
+        l = self.name.split(" ") # Splits the full name (e.g., "Jack Doe") into a list: ["Jack", "Doe"].
+        new_name = f"{first} {l[1]}" # first means jack and l[1] means doe
         self.name = new_name
     
 e = Employee("Jack Doe", 34555)
