@@ -31,7 +31,7 @@ with open("dev.txt", "r") as f: #context manager
 # f = open("John Doe.txt", "w") # if you are working with binary files you need to put "t" in wt or rt 
 # # It will create the file automatically named John Doe.txt and will insert the below text in it.
 # # and whenever we are writing to a file make sure that the file doesnt contain any data cause all the data will be overridden by what you write next
-# string = ''' John Dow is a  nice guy. He lives in Nyc and he works with Python 
+# string = ''' John Doe is a  nice guy. He lives in Nyc and he works with Python 
 # His favorite package is Pandas'''
 
 
