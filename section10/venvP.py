@@ -17,7 +17,11 @@
 
 # First create a file named requirements.txt and then fill in the names of packages that you want to install in like pandas, requests, scipy, moviepy and etc 
 
+# Now you can cretae requirements,txt by using "pip freeze > requirements.txt"
+# This will create a requirements.txt file and bydefault will include all the packages being used by your project
 
+# If you want to install requirements.txt use this command  "pip install -r .\requirements.txt" this will scan all the packages inside requirements.txt and will install it one by one. You can check this command by creating another venv named env2 and then in that venv you can use this command and take all the packages from env1 to env2
 
+# To check the packages with version number you can use "pip freeze"
 
-
+# If you want to deactive the virtual env then type the command "deactivate" this will deactivate this virtual env
