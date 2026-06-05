@@ -33,6 +33,22 @@ for i in range(1,11):
     table.append(5*i)
 now instead of this we can use list comprehensions    
 """
-table = [5*i for i in range(1,11)]
 
-print(table)
+# table = [5*i for i in range(1,11)]
+
+# print(table)
+
+'''Using list constructor'''
+
+a = list(1,2,3,'apple',4.5)
+print(a)
+
+b = list(("GFG"))
+print(b)
+
+'''Creating list with repeated elements'''
+
+# a = [2] * 5
+# b = [0] * 7
+# print(a,b)
+

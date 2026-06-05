@@ -15,3 +15,7 @@ is_student = True
 print(is_student)
 print(type(is_student))
 print(not is_student)
+
+
+
+

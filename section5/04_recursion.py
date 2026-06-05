@@ -7,5 +7,12 @@ def fib(n):
         return n
     return fib(n-2) + fib(n-1)
 
+def fact(n):
+    if n ==1:
+        return 1
+    return n*fact(n-1)
+
+
 n = int(input("Enter a number: "))
 print(fib(n))
+print(fact(n))

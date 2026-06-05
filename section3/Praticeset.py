@@ -1,3 +1,4 @@
+
 # n = int(input("Enter a number: "))
 # if n > 0:
 #     print("Positive number")
@@ -111,7 +112,7 @@
 # * * * *
 # '''
 # for i in range(1,5):
-#     print("* " * i)
+#     print("* " * i) #String multiplication repeats the string
 #-------------------------------------------
 # n = 1
 # while n <= 10:
@@ -126,8 +127,14 @@
 # print("Correct Password! You are logged in.")
 #-------------------------------------------
 #Use a while lopp to reverse a given number 
-# num = 45522
-# print(int(str(num)[::-1]))
+# num = int(input("Enter the number to be reversed: "))
+# rev = 0
+
+# while num > 0:
+#     digit = num % 10 #Gives you last digit integer 
+#     rev = rev * 10 + digit #first set to 0
+#     num = num // 10 #takes only integers not floating
+# print(rev)
 #-------------------------------------------
 # for i in range(1,11):
 #     print(i)
@@ -146,15 +153,16 @@
 #     print(i)
 # #Alternative
 
-# for i in range(1, 6):
-#     match i:
-#         case 1:
-#             print(1)
-#         case 2:
-#             print(2)
-#         case 3:
-#             pass
-#         case 4:
-#             print(4)
-#         case 5:
-#             print(5)
+for i in range(1, 6):
+    match i:
+        case 1:
+            print(1)
+        case 2:
+            print(2)
+        case 3:
+            pass
+        case 4:
+            print(4)
+        case 5:
+            print(5)
+

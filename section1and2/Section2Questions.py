@@ -1,5 +1,5 @@
-'''Write a program that prints the follwoing poem using a singlt print() statement'''
-# print("Twinkle, twinkle, little star,\nHow I wonder what you are! ")
+'''Write a program that prints the following poem using a singlt print() statement'''
+#print("Twinkle, twinkle, little star,\nHow I wonder what you are! ")
 
 #-----------------------
 '''Create variables to store:- Your name(string)
@@ -14,7 +14,7 @@ Whether you are a student (boolean)
 # is_student = True
 
 # print("The name of the student is " + name)
-# print("The age of the student is " + str(age))
+# print("The age of the student is "+ str(age)) # "+" sign is only used to concatenate strings not integers 
 # print("The height of the student is " + str(height))
 # print("Is the student enrolled? " + str(is_student))
  
@@ -23,8 +23,8 @@ Whether you are a student (boolean)
 #-----------------------
 # #Typecasting
 # num = "45"
-# num = int(num)
-# print(type(num))
+# num1 = int(num)
+# print(type(num1))
 
 #-----------------------------
 

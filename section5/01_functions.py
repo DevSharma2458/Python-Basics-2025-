@@ -7,7 +7,7 @@
 #-------------------------
 # def average(a,b,c):
 #     d = (a+b+c)/3
-#     return d
+#     return d 
 
 # o1 = average(3,4,5)
 # o2 = average(34,45,56)
@@ -29,10 +29,12 @@
 # print(c)
 # #-------------------------
 
-'''Type of arguments
+'''
+Type of arguments
 1. Positional arguments
 2. Default arguments
-3. Keyword arguments'''
+3. Keyword arguments
+'''
 ''' #Default arguments'''
 # def add(a,b, plus=0):
 #     x = a + b + plus
@@ -48,6 +50,50 @@
 
 # c = add( b= 5, a=3, plus=2) # plus value is overridden to 2
 # print(c)
+
+# def odd_even(n):
+#     if n%2==0:
+#         print("number is even number")
+#     else:
+#         print("It is an odd number")
+
+# odd_even(n=int(input("Enter a number")))
+
+
+# def trianglular_shape(n):
+#     for i in range(1,n+1):
+#         for j in range(1,i+1):
+#             print("*",end=" ")
+#         print()
+
+# trianglular_shape(n=int(input("Enter the number: ")))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

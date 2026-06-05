@@ -24,7 +24,7 @@ print(pi_int)
 print(type(pi_int))
 
 a = int (input("Enter a number: "))
-a = int(a)
+
 b = int(input("Enter another number: "))
-b = int(b)
+
 print("The sum is: ", a+b)

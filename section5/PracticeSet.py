@@ -4,7 +4,7 @@
 # greet()
 # #-------------------------------------------
 # def square(num):
-#     print (num * num)
+#     print (num**2)
 
 # square(5)
 
@@ -17,7 +17,7 @@
 # def calculate_area(length, width = 10):
 #     return length * width
 
-# print(f"The area of this rectangle is {calculate_area(13, 20)}")
+# print(f"The area of this rectangle is {calculate_area(13,20)}")
 # print(calculate_area(13))
 # #-------------------------------------------
 # add = lambda a, b: a + b
@@ -34,7 +34,7 @@
 #         return 1
 #     return factorial (n - 1) * n
 
-# print(factorial(7))
+# print(factorial(5))
 # #------------------------------------------
 # def sum_of_digits(n):
 #     if n == 0:
@@ -79,19 +79,19 @@
 # print(multiply.__doc__)
 
 # #------------------------------------------
-# def fib(n):
-#     if n <= 1:
-#         return n
-#     else:
-#         return fib(n - 1) + fib(n - 2) 
+def fib(n):
+    if n <= 1:
+        return n
+    else:
+        return fib(n - 1) + fib(n - 2) 
 
 
-# def fibonacci(n):
-#     print(f"First {n} Fibonnaci number are: ")
-#     for i in range(n):
-#         print(fib(i), end = " ")
+def fibonacci(n):
+    print(f"First {n} Fibonnaci number are: ")
+    for i in range(n):
+        print(fib(i), end = " ")
 
-# fibonacci(10)
+fibonacci(10)
 # #------------------------------------------
 # def safe_divide(a, b):
 #     if b == 0:
@@ -105,3 +105,12 @@
 # from modules import mymodule
 # mymodule.is_even(10)
 # #------------------------------------------
+
+
+
+
+
+def calculate_area(length,width=10):
+    area = length*width
+    return area
+print(calculate_area(2))

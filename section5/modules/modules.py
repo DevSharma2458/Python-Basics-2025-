@@ -10,6 +10,6 @@ import requests
 print(math.sqrt(16))
 
 mymodule.hello()
-
-r = requests.get()('https://www.google.com')
+mymodule.is_even(8)
+r = requests.get('https://www.google.com')
 print(r.text)

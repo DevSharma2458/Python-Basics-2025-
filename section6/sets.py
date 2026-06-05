@@ -15,9 +15,9 @@
 # print(s)
 
 '''Set Operations'''
-# a = {3,23,1}
-# b = {23,4,2,55,1}
-
+# a = {3,23,1,1}
+# # b = {23,4,2,1,55,1}
+# print(a)
 # c = a.union(b) # 1 will present only one time
 # print(c)
 

@@ -8,7 +8,7 @@
 ## -----------------------------------------------------
 # numbers = list(range(1,11))
 # print("first three numbers: ", numbers[:3])
-# print("first three numbers: ", numbers[-3:])
+# print("last three numbers: ", numbers[-3:])
 ## -----------------------------------------------------
 # numbers = [5, 2, 9, 1, 7]
 # numbers.sort()
@@ -27,6 +27,7 @@
 # #coordinates[0] = 50 #error
 # temp = list(coordinates)
 # temp[0] = 50
+# print(temp)
 # coordinates = tuple(temp)
 # print(coordinates) 
 ## -----------------------------------------------------
@@ -80,8 +81,8 @@
 # print("Product with highest price:", highest_price_product, "-", products[highest_price_product])
 ## -----------------------------------------------------
 ## Write a program that merges two dictionaries into one.
-# First = {"Name": "John", "Age" : 22, "Salary" : 30000}
-# Second = {"Name1" : "Srk", "Age1": 22,  "Salary1" : 30000}
+First = {"Name": "John", "Age" : 22, "Salary" : 30000}
+Second = {"Name1" : "Srk", "Age1": 22,  "Salary1" : 30000}
 
-# Merged = {**First, **Second}
-# print(Merged)
+Merged = {**First, **Second}
+print(Merged)

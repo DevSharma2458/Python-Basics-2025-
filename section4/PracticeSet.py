@@ -57,3 +57,16 @@
 #     print(f"{text} is a palindrome.")
 # else:
 #     print(f"{text} is not a palindrome.")
+
+#-------- Alternative bonus 1 with a while loop too --------
+# str1 = "Coding in Python is fun"
+# sum = 0
+# vowels = ["a","e","i","o","u","A","E","I","O","U"]
+
+# i = 0
+# while i < len(str1):
+#     if str1[i] in vowels:
+#         sum+=1
+#     i+=1
+# print(sum)
+

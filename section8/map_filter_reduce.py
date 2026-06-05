@@ -9,7 +9,15 @@
 
 # new = list(map(square, numbers))
 # print(new)
-
+# # Alternative with lambda
+# a = [1, 2, 3, 4]
+# res = list(map(lambda x: x ** 2, a))
+# print(res)
+#using map with multiple iterables
+a= [1,2,3]
+b=[4,5,6]
+res=map(lambda x,y: x+y,a,b)
+print(list(res))
 # # -------------------------------------------------------------
 # # Filter - Returns True or False - Returns Filtered list - Keeps only True values
 # filter() is used to keep only those elements that satisfy a condition (True).
