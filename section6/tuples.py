@@ -13,3 +13,8 @@
 # t = (3, 12, 1, 54, 23, 12)
 # print(t.count(12)) #Counts the number of occurences of 12
 # print(t.index(54)) #Returns the index of the first occurence of 54
+
+user_input = input("Enter elements separated by spaces: ").split()
+my_tuple = tuple(user_input)
+
+print(my_tuple) 
