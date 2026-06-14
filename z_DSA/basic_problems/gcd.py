@@ -26,3 +26,4 @@ def gcd(a,b):
     return a
 
 print(gcd(a,b))
+
